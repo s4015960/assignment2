@@ -1,0 +1,88 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <title>
+            Climate Crisis
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Neroli Wesley;Jumi Suzuki Carpenter;Nguyen Nguyen;Ella Ferraretto;Kelly Ga Yi Xiao;C Lee;Phuong Nguyen;Ka Chen Yeo;Michelle Arlene Tan;Pauline Natasha Latidjan;Evelyn Tjiang</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">11;#Neroli Wesley;#16;#Jumi Suzuki Carpenter;#27;#Nguyen Nguyen;#17;#Ella Ferraretto;#15;#Kelly Ga Yi Xiao;#28;#C Lee;#14;#Phuong Nguyen;#13;#Ka Chen Yeo;#26;#Michelle Arlene Tan;#12;#Pauline Natasha Latidjan;#18;#Evelyn Tjiang</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    
+    <body style="background-color: rgb(245,172,22);">
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+
+            <div class="image-container"><img id="earth1" src="img/Earth_01.png" onmouseover="this.src='img/earth_drip.png';" onmouseout="this.src='img/Earth_01.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="tree" src="img/tree_01.png" onmouseover="this.src='img/tree_01fire.png';" onmouseout="this.src='img/tree_01.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="earth2" src="img/Earth_01.png" onmouseover="this.src='img/Earth_02red.png';" onmouseout="this.src='img/Earth_01.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="iceberg" src="img/iceberg.png" onmouseover="this.src='img/iceberg_cracks.png';" onmouseout="this.src='img/iceberg.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="road" src="img/road_round.png" onmouseover="this.src='img/road_cracked_round.png';" onmouseout="this.src='img/road_round.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="house" src="img/house.png" onmouseover="this.src='img/house_flood_round.png';" onmouseout="this.src='img/house.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="corals" src="img/coral_round.png" onmouseover="this.src='img/coral_bleach_round.png';" onmouseout="this.src='img/coral_round.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="volcano" src="img/volcano.png" onmouseover="this.src='img/volcano_boom.png';" onmouseout="this.src='img/volcano.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="fish" src="img/fish_round.png" onmouseover="this.src='img/fish_poison_round.png';" onmouseout="this.src='img/fish_round.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/earth_dripping.mp3");
+            var sound2 = new buzz.sound("sound/trees_burning.mp3");
+            var sound3 = new buzz.sound("sound/earth_alarm.mp3");
+            var sound4 = new buzz.sound("sound/iceberg.mp3");
+            var sound5 = new buzz.sound("sound/road.mp3");
+            var sound6 = new buzz.sound("sound/house_floating.mp3");
+            var sound7 = new buzz.sound("sound/corals.mp3");
+            var sound8 = new buzz.sound("sound/volcano.mp3");
+            var sound9 = new buzz.sound("sound/fish_floating.mp3");
+
+            window.onload = function() {
+                document.getElementById('earth1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('tree').addEventListener('click', function () {sound2.play();});
+                document.getElementById('earth2').addEventListener('click', function () {sound3.play();});
+                document.getElementById('iceberg').addEventListener('click', function () {sound4.play();});
+                document.getElementById('road').addEventListener('click', function () {sound5.play();});
+                document.getElementById('house').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('corals').addEventListener('click', function () {sound7.play();});
+                document.getElementById('volcano').addEventListener('click', function () {sound8.play();});
+                document.getElementById('fish').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
